@@ -15,4 +15,3 @@ public class App {
         System.out.println(add.toString());
     }
 }
-//https://github.com/pawarganeshb/Student-Details-Spring.git
