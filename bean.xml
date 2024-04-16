@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<!--Bean Class-->
+
+	<!-- bean definitions here -->
+	<bean id="stu1" class="com.app.Students">
+		<property name="stuName" value="Ganesh Pawar" />
+		<property name="mobileNo" value="8805005169" />
+		<property name="sId" value="STD123" />
+	</bean>
+
+	<bean id="addr1" class="com.app.Address">
+		<property name="city" value="Pune Maharastra"/>
+		<property name="contry" value="India"/>
+		<property name="pin" value="514001"/>
+		<property name="stu" ref="stu1"/>
+	</bean>
+</beans>
